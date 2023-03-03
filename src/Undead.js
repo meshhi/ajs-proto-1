@@ -8,3 +8,5 @@ class Undead extends Character {
         this.defense = 25;
     }
 }
+
+export default Undead;

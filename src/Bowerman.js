@@ -8,3 +8,5 @@ class Bowerman extends Character {
         this.defense = 25;
     }
 }
+
+export default Bowerman;
