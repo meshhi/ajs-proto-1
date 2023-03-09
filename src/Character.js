@@ -15,12 +15,16 @@ class Character {
       this.attack *= 1.2;
       this.defense *= 1.2;
       this.health = 100;
+    } else {
+      throw new Error('Нельзя повысить левел умершего');
     }
   }
 
   damage(points) {
     if (this.health > 0) {
       this.health -= points * (1 - this.defence / 100);
+    } else {
+      throw new Error('Персонаж уже все...');
     }
   }
 }
